@@ -5,33 +5,33 @@
   },
   "apps": [
     {
-      "root": "src",
+      "root": "",
       "outDir": "dist",
       "assets": [
-        "assets",
-        "favicon.ico"
+        "src/assets",
+        "src/favicon.ico"
       ],
-      "index": "index.html",
-      "main": "main.ts",
-      "test": "test.ts",
-      "tsconfig": "tsconfig.json",
+      "index": "src/index.html",
+      "main": "src/main.ts",
+      "test": "src/test.ts",
+      "tsconfig": "src/tsconfig.json",
       "prefix": "app",
       "mobile": false,
       "styles": [
-        "styles.css"
+        "src/styles.css",
+        "node_modules/semantic-ui-css/semantic.min.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "node_modules/semantic-ui-css/semantic.min.js"
+      ],
       "environments": {
-        "source": "environments/environment.ts",
-        "dev": "environments/environment.ts",
-        "prod": "environments/environment.prod.ts"
+        "source": "src/environments/environment.ts",
+        "dev": "src/environments/environment.ts",
+        "prod": "src/environments/environment.prod.ts"
       }
     }
   ],
   "e2e": {
-    "protractor": {
-      "config": "./protractor.conf.js"
-    }
   },
   "test": {
     "karma": {

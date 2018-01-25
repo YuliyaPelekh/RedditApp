@@ -1,4 +1,5 @@
 import './polyfills.ts';
+import '../node_modules/semantic-ui-css/semantic.min.js';
 
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { enableProdMode } from '@angular/core';
